@@ -6,10 +6,11 @@ Quelotiró, qué ignorancia empresarial, lo dejé funcional y me dediqué a otra
 Y en 2010 ideé lo que hizo luego el saas xubio. Pero no conseguí socio honesto. 
 
 
-Analisis técnico de chatipití, después de que me preguntó un par de cosas:
+## Analisis técnico de chatipití, después de que me preguntó un par de cosas :
+(analisis en Chatipití en [detalle](./chatipitiDetalle.md) )
 
 # Informe técnico – Sistema de Sueldos y Jornales en Clipper (1992)
-Autor: [Tu nombre]
+Autor: Lito
 Año de desarrollo: 1992
 Lenguaje: Clipper
 Sistema: TamecoSJ
