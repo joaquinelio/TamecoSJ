@@ -1,0 +1,250 @@
+
+1-3-92 *** s_t03 *****************************************
+
+s		publ hx_cant
+suma_retro	hx_cant,
+		replace en una so instr
+reci_j/reci_s	hx_cant
+		MAX( dias_x_ant, 21 ) ---tameco----
+retr100.dbf     retr->chxr ,(agregose)
+dias_x_ant: => dias legales, min 21 lo pongo en reci_*
+
+
+18-3-92 *** s_t04 =====================================================
+
+s,
+udfsue,
+abmsuel,
+liquidar,
+persacum,
+reci_j,
+reci_s,
+periget:    reemplazo pg_pe("C") ==> public pg_pg
+
+21-3-92 s_t05 =============================================================
+
+liquida1
+liquidar
+periget:    cdo ESC, q no preg por -todocorrecto?- 
+persacum,
+periget    add: periodo : 1y2 Quinc/Parcial mes
+reci_s     
+reci_j
+
+suelitem
+periget
+reci_s	  publ pg_suedias, liq de parte de mes, suel->codigo =2 X Suel basico dias
+
+23-3-92 s_t06 ==============================================================
+
+udfsue
+liquida1
+liquidar
+printsue	se cambia asie.prn por asiento.prn
+
+---
+*		se cambia estruct de menues
+menupers
+liquidac (new)
+liqhecha (new)
+veo	 (new)
+liquiver (scratch de-baja kaput)
+
+liquida1
+liquidar	printsue() ==> liqhecha()
+---
+
+err-92 s_t07 ===============================================================
+
+anular   (new)
+
+2-4-92 s_t08 ===============================================================
+
+s,
+ventana   muere window()
+
+liquidac   se saca abr_tabl, q era de roby
+liquidno   repl en 1 instr.
+periget    pg_ach(): tam window, corr ESC
+suelitem   repl solo en codigo =1 y =2
+abmsuel    saltea mensuales en 1q / saltea no_liquida
+liquicom   pant_proc()  (killed)
+ventanas   msg_data()   (new)
+veoveo     memoread arch, s/path
+puedoprt() +msg_data()
+anular,
+genbases   saco del .ntx, hago reindex  re_ntx(): new
+periget    pg_suedias es now numerica
+udfsue     periquin: ret 2 si no es 1
+
+7-4-92  s_t_09  ==========================================================
+
+abmitem,
+abmpers,
+menuinic,
+reci_j,
+reci_s,
+udfsue		sele x selw
+itemmod		selw c/ntx
+u78,
+udfsue,
+itemasie,
+perscate
+abmsuel		repl en 1 sola instr
+s>globales	muere,
+"		publ en 1 a init()
+abmpers>sueldel delete de retr ademas de suel
+menupers	no abro retr
+abmsuel>idtipo	ret $%- , repl acorde a esto
+perigets	dead selw("temp")
+menuempr	dead.  No se compilaba siquiera
+abmcate,
+abmitem,
+menuinic,
+abmpers,
+abmsu_in
+perscate,
+liquida1,
+liquidar,
+itemmod		cierro bases cdo salgo
+liquida1,
+liquidar,
+abmsu_in,
+abmsuel		muevo suelitem(), a veces pongo solo filtro
+udfsue>clr_retro: no abre/cierra retr
+anular,
+softback	commit
+*.*		abrev varias
+udf		v1.42  (ex 1.39a)
+abmitem>irread	uso yasta()
+re_ntx		dead
+liqhecha,
+genbases	close all
+liquidac	trucho pg_pg = "2" antes d entrar en abmsuel
+softback	msg_data
+abmsuel		1Q no muestra subsidios (it->periodo=M) (tamb en ayuda)
+"		saco cond d filt xq creo q no se daran
+">item_filt	dead.  Va a itemK
+
+8-4-92  s_t_10   ============================================================
+
+prinasie	?as.mem =>fallo
+abmcate,
+abmitem,
+abmpers,
+itemmod,
+itemasie,
+liqhecha,
+liquida1,
+liquidar,
+menu_ini,
+menupers,
+perscate,
+suelitem	selw dead
+liquidar,
+liquida1,
+liquicom,
+liquidac	x liq_db
+liq_db(): 	new: abre/cierra, perm elegir de/desde q empleado
+suelitem	dead.  Pasa a liq_db
+itemsel		pasa a abmitem.prg 	// xq si
+
+
+8/9-4-92  s_t_11   ============================================================
+
+itemasie	pasa a abmitem.prg	// xq si
+udfbrow,
+abmcate,
+abmsuel,
+s		dead publ f_brow_origen ; pasa func como param
+reci_s,
+itemmod,
+itemget		valid tipo c/at()
+ventanas>pagek	new
+abmitem,
+abmpers,
+menuini,
+menupers,	pagek
+liquida1	filter q fallaba
+udf		1.50
+abmcate,
+abmitem,
+abmpers,
+itemmod,
+liqhecha,
+liquicom,
+menuini,
+menupers,
+perscate	db_abre db_cierra de  UDF1.50
+udf		1.51
+ventanas	set hmenu
+liquida1,
+liquidar,
+liquidac,
+liqhecha	param para restaurar db abiertas (q trucho)
+s		now is  A.PRG
+
+11-4-98  s_t_12 =========================================================
+
+abmpers		ya no cierro pers
+abmsuel>idtipo	IF x if()
+abmsuel,
+reci_s		idtipo, para item->codigo=1  ==> DIAS TRAB
+
+14-4-92  s_t_13 =========================================================
+
+udf		1.51c
+abmcate,
+abmitem,
+abmpers,
+genbases,
+item_mod,
+liqhech,
+liquicom,
+menuini,
+menupers,
+perscate	db_u
+
+s_t_14 =============================================================
+
+agrego comentarios
+
+5-5-92  s_t_15 ========================================================
+
+genbases:db_u	probl de comillas
+idtipo		pa' futuro agregado d item  2
+reci_s		t_xs
+prinasie	say condicionados
+a		anular en menu inicial	(colocar foliar y anular en submenu)
+anular,
+liq_hecha()	keyb (ESC) de anular() a liq_hecha()
+anular		borrado de .dbk y msg de q no se puede anular
+
+
+6-7-92  s_t_16  =======================================================
+
+?
+
+2-9-92  s_t_17  =======================================================
+
+reci_j		antig sobre lo liquidado
+udf:alfanum	acepta  '.'y '-' pra numeros
+s
+p_pasada para saber en q lado voy y no sumar 2 veces retros
+
+10-9-92 s_t_18  =======================================================
+
+abmsuel		f5 no more
+liquida1	vuelvo a poner en loop sumabruto() sumaretr persacum 
+reci_retr	reto = fraccion de lo q se cobra, no la suma.
+
+
+=======================================================================
+udf:a_prn	1.52  probl linea defasada
+=============
+para st sig. ==========================================================
+
+siguen... probl linea defasada desde 2do recibo
+falla alta automatica
+=====================================================================
+
