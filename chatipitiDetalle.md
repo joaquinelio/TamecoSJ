@@ -2,6 +2,8 @@ Por algún oculto motivo chatipití me hizo 4 preguntas antes de hacer el analis
 
 Y ahora que lo pienso no mencionó los convenios cargados, con el manejo separado de sueldos y jornales. Quiza engloba dentro de los items de la plantilla base. No recuerdo, no le pregunté.
 
+No le crean todo. Chatipití está diseñada para complacer.
+
 1 Sí, los retroactivos los cargaban a mano. Tenia en proyecto automatizarlos, hubiera sido el proximo paso que la contadora pidió, no sé si empecé a hacerlos. 
 
 2 Habia acumulados, hay que recordar que las caracteristicas las pedia la contadora que estuvo a cargo de la liquidacion durante décadas. 
@@ -11,7 +13,7 @@ Y ahora que lo pienso no mencionó los convenios cargados, con el manejo separad
 4 Libro. Sí, imprimia directamente en el libro rubricado. La contadora casi se desmaya de gusto cuando llegamos a ese punto. 
 
 
-ChatGPT dijo:
+## ChatGPT dijo:
 Ya leí con éxito los archivos .PRG que seleccionamos. Tus comentarios previos ya adelantaban bastante, y ahora con el código a mano puedo confirmar:
 
 🧩 1. LIQUIDNO.PRG: liquidación de novedades
