@@ -19,7 +19,7 @@ Año de desarrollo: 1992
 
 Lenguaje: Clipper
 
-Sistema: TamecoSJ
+Sistema: TamecoSJ (salvado y marufo) 
 
 
 ✅ Características principales
