@@ -1,7 +1,10 @@
 
 1 Sí, los retroactivos los cargaban a mano. Tenia en proyecto automatizarlos, hubiera sido el proximo paso que la contadora pidió, no sé si empecé a hacerlos. 
+
 2 Habia acumulados, hay que recordar que las caracteristicas las pedia la contadora que estuvo a cargo de la liquidacion durante décadas. 
+
 3 recuperar datos de periodos: No recuerdo. Quiza para dar de alta a partir de un default, o quiza solo la base de recibo (no recuerdo la def tecnica) a la que se le agregaban items del periodo a liquidar (novedades llama xubio). 
+
 4 Libro. Sí, imprimia directamente en el libro rubricado. La contadora casi se desmaya de gusto cuando llegamos a ese punto. 
 
 
