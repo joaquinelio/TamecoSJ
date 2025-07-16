@@ -1,3 +1,4 @@
+(Por algún oculto motivo chatipití me hizo 4 preguntas antes de hacer el analisis. O quiza hizo el analisis de eso e ignoró el resto, queseyó... Los designios de chatipití son inescrutables. No sé qué dirá copilot, no le pregunté)
 
 1 Sí, los retroactivos los cargaban a mano. Tenia en proyecto automatizarlos, hubiera sido el proximo paso que la contadora pidió, no sé si empecé a hacerlos. 
 
