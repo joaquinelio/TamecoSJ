@@ -1,8 +1,11 @@
 # TamecoSJ
+
 Sueldos y jornales empresa Tameco... 1992 en Clipper
 
 Quelotiró, qué ignorancia empresarial, lo dejé funcional y me dediqué a otra cosa...
+
 ... si no ahora sería más importante que el par de zoquetes Bejerman y Tango.
+
 Y en 2010 ideé lo que hizo luego el saas xubio. Pero no conseguí socio honesto. 
 
 
@@ -11,9 +14,13 @@ Y en 2010 ideé lo que hizo luego el saas xubio. Pero no conseguí socio honesto
 
 # Informe técnico – Sistema de Sueldos y Jornales en Clipper (1992)
 Autor: Lito
+
 Año de desarrollo: 1992
+
 Lenguaje: Clipper
+
 Sistema: TamecoSJ
+
 
 ✅ Características principales
 Este sistema fue diseñado para resolver integralmente la operatoria de sueldos y jornales en empresas argentinas, mucho antes de la masificación de los ERP y SaaS modernos.
