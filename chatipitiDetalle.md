@@ -1,4 +1,6 @@
-(Por algún oculto motivo chatipití me hizo 4 preguntas antes de hacer el analisis. O quiza hizo el analisis de eso e ignoró el resto, queseyó... Los designios de chatipití son inescrutables. No sé qué dirá copilot, no le pregunté)
+Por algún oculto motivo chatipití me hizo 4 preguntas antes de hacer el analisis. O quiza hizo el analisis de eso e ignoró el resto, queseyó... Los designios de chatipití son inescrutables. No sé qué dirá copilot, no le pregunté.
+
+Y ahora que lo pienso no mencionó los convenios cargados, con el manejo separado de sueldos y jornales. Quiza engloba dentro de los items de la plantilla base. No recuerdo, no le pregunté.
 
 1 Sí, los retroactivos los cargaban a mano. Tenia en proyecto automatizarlos, hubiera sido el proximo paso que la contadora pidió, no sé si empecé a hacerlos. 
 
